@@ -34,6 +34,18 @@ public class AcousticGuitar extends Guitar {
         return type;
     }
 
+    public void setSoundHole(String soundHole) {
+        this.soundHole = soundHole;
+    }
+
+    public void setBraceWood(String braceWood) {
+        this.braceWood = braceWood;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
     @Override
     public String toString() {
         return "AcousticGuitar{" +

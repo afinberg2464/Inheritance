@@ -55,6 +55,30 @@ public class ElectricGuitar extends Guitar {
         return selectorSwitch;
     }
 
+    public void setNumPickups(int numPickups) {
+        this.numPickups = numPickups;
+    }
+
+    public void setPickupType(String pickupType) {
+        this.pickupType = pickupType;
+    }
+
+    public void setPickupConfig(String pickupConfig) {
+        this.pickupConfig = pickupConfig;
+    }
+
+    public void setVolumeKnobs(int volumeKnobs) {
+        this.volumeKnobs = volumeKnobs;
+    }
+
+    public void setToneKnobs(int toneKnobs) {
+        this.toneKnobs = toneKnobs;
+    }
+
+    public void setSelectorSwitch(int selectorSwitch) {
+        this.selectorSwitch = selectorSwitch;
+    }
+
     @Override
     public String toString() {
         return "ElectricGuitar{" +

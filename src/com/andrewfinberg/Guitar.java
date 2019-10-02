@@ -1,14 +1,14 @@
 package com.andrewfinberg;
 
 public class Guitar {
-    private String make;
-    private String model;
-    private String color;
-    private double scaleLength;
-    private String bodyWood;
-    private String neckWood;
-    private int numFrets;
-    private String fretMaterial;
+    protected String make;
+    protected String model;
+    protected String color;
+    protected double scaleLength;
+    protected String bodyWood;
+    protected String neckWood;
+    protected int numFrets;
+    protected String fretMaterial;
 
     public Guitar(String make,
                   String model,
@@ -58,6 +58,38 @@ public class Guitar {
 
     public String getFretMaterial() {
         return fretMaterial;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setScaleLength(double scaleLength) {
+        this.scaleLength = scaleLength;
+    }
+
+    public void setBodyWood(String bodyWood) {
+        this.bodyWood = bodyWood;
+    }
+
+    public void setNeckWood(String neckWood) {
+        this.neckWood = neckWood;
+    }
+
+    public void setNumFrets(int numFrets) {
+        this.numFrets = numFrets;
+    }
+
+    public void setFretMaterial(String fretMaterial) {
+        this.fretMaterial = fretMaterial;
     }
 
     @Override
