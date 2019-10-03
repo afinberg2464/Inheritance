@@ -1,16 +1,37 @@
 package com.andrewfinberg;
 
+/**
+ * Sub-class for acoustic guitars
+ */
 public class AcousticGtr extends Guitar {
     private String soundHole;
     private String cutaway;
     private String bridgeWood;
 
-    public AcousticGtr(String soundHole, String cutaway, String bridgeWood) {
+    /**
+     * Default constructor
+     * @param make          Make
+     * @param model         Model
+     * @param bodyStyle     Style
+     * @param bodyWood      Wood
+     * @param color         Color
+     * @param frets         Number of frets
+     * @param soundHole     Sound hole
+     * @param cutaway       Cutaway
+     * @param bridgeWood    Bridge Wood
+     */
+    public AcousticGtr(String make, String model, String bodyStyle, String bodyWood, String color, int frets, String soundHole, String cutaway, String bridgeWood) {
+        super(make, model, bodyStyle, bodyWood, color, frets);
         this.soundHole = soundHole;
         this.cutaway = cutaway;
         this.bridgeWood = bridgeWood;
     }
 
+    /**
+     * Returns sound hole
+     *
+     * @return sound hole
+     */
     public String getSoundHole() {
         return soundHole;
     }
@@ -19,6 +40,10 @@ public class AcousticGtr extends Guitar {
         this.soundHole = soundHole;
     }
 
+    /**
+     * Returns cutaway
+     * @return cutaway
+     */
     public String getCutaway() {
         return cutaway;
     }
@@ -27,6 +52,10 @@ public class AcousticGtr extends Guitar {
         this.cutaway = cutaway;
     }
 
+    /**
+     * Returns bridge wood
+     * @return bridge wood
+     */
     public String getBridgeWood() {
         return bridgeWood;
     }
@@ -41,12 +70,6 @@ public class AcousticGtr extends Guitar {
                 "soundHole='" + soundHole + '\'' +
                 ", cutaway='" + cutaway + '\'' +
                 ", bridgeWood='" + bridgeWood + '\'' +
-                ", make='" + make + '\'' +
-                ", model='" + model + '\'' +
-                ", bodyStyle='" + bodyStyle + '\'' +
-                ", bodyWood='" + bodyWood + '\'' +
-                ", color='" + color + '\'' +
-                ", frets=" + frets +
                 '}';
     }
 }
