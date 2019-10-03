@@ -1,5 +1,8 @@
 package com.andrewfinberg;
 
+/**
+ * Created by Andrew F 10/3/2019
+ */
 public class Sitar extends Guitar {
 
     private String tuning;
