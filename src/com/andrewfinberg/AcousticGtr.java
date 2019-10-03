@@ -2,6 +2,7 @@ package com.andrewfinberg;
 
 /**
  * Sub-class for acoustic guitars
+ * Created by Andrew F 10/3/2019
  */
 public class AcousticGtr extends Guitar {
     private String soundHole;

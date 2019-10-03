@@ -2,6 +2,7 @@ package com.andrewfinberg;
 
 /**
  * Super class for Guitars
+ * Created by Andrew F 10/3/2019
  */
 public class Guitar {
     protected String make;

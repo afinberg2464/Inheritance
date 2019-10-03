@@ -2,6 +2,7 @@ package com.andrewfinberg;
 
 /**
  * Sub-class for electric guitars
+ * Created by Andrew F 10/3/2019
  */
 public class ElectricGtr extends Guitar {
     private String pickupType;
