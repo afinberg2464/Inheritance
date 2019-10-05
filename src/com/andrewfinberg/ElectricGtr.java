@@ -11,14 +11,14 @@ public class ElectricGtr extends Guitar {
     /**
      * Default constructor
      *
-     * @param make
-     * @param model
-     * @param bodyStyle
-     * @param bodyWood
-     * @param finishColor
-     * @param frets
-     * @param pickupType
-     * @param bridgeType
+     * @param make make
+     * @param model model
+     * @param bodyStyle body style
+     * @param bodyWood body wood
+     * @param finishColor finish color
+     * @param frets number of frets
+     * @param pickupType pickup type
+     * @param bridgeType bridge type
      */
     public ElectricGtr(String make, String model, String bodyStyle, String bodyWood, String finishColor, int frets, String pickupType, String bridgeType) {
         super(make, model, bodyStyle, bodyWood, finishColor, frets);
@@ -26,11 +26,6 @@ public class ElectricGtr extends Guitar {
         this.bridgeType = bridgeType;
     }
 
-    /**
-     * Returns pickup type
-     *
-     * @return pickup type
-     */
     public String getPickupType() {
         return pickupType;
     }
@@ -39,11 +34,6 @@ public class ElectricGtr extends Guitar {
         this.pickupType = pickupType;
     }
 
-    /**
-     * Returns bridge type
-     *
-     * @return bridge type
-     */
     public String getBridgeType() {
         return bridgeType;
     }
@@ -52,6 +42,9 @@ public class ElectricGtr extends Guitar {
         this.bridgeType = bridgeType;
     }
 
+    /**
+     * Method to use tremolo
+     */
     public void useTremolo() {
 
     }

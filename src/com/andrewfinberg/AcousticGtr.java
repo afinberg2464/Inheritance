@@ -12,15 +12,15 @@ public class AcousticGtr extends Guitar {
     /**
      * Default constructor
      *
-     * @param make
-     * @param model
-     * @param bodyStyle
-     * @param bodyWood
-     * @param finishColor
-     * @param frets
-     * @param soundHole
-     * @param cutaway
-     * @param bridgeWood
+     * @param make make
+     * @param model model
+     * @param bodyStyle body style
+     * @param bodyWood body wood
+     * @param finishColor finish color
+     * @param frets number of frets
+     * @param soundHole sound hole design
+     * @param cutaway cutaway style
+     * @param bridgeWood bridge wood
      */
     public AcousticGtr(String make, String model, String bodyStyle, String bodyWood, String finishColor, int frets, String soundHole, String cutaway, String bridgeWood) {
         super(make, model, bodyStyle, bodyWood, finishColor, frets);
@@ -29,11 +29,6 @@ public class AcousticGtr extends Guitar {
         this.bridgeWood = bridgeWood;
     }
 
-    /**
-     * Returns sound hole
-     *
-     * @return sound hole
-     */
     public String getSoundHole() {
         return soundHole;
     }
@@ -42,10 +37,6 @@ public class AcousticGtr extends Guitar {
         this.soundHole = soundHole;
     }
 
-    /**
-     * Returns cutaway
-     * @return cutaway
-     */
     public String getCutaway() {
         return cutaway;
     }
@@ -54,10 +45,6 @@ public class AcousticGtr extends Guitar {
         this.cutaway = cutaway;
     }
 
-    /**
-     * Returns bridge wood
-     * @return bridge wood
-     */
     public String getBridgeWood() {
         return bridgeWood;
     }
@@ -66,6 +53,9 @@ public class AcousticGtr extends Guitar {
         this.bridgeWood = bridgeWood;
     }
 
+    /**
+     * Method to use capo
+     */
     public void useCapo() {
 
     }

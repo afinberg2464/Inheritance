@@ -15,12 +15,12 @@ public abstract class Guitar {
     /**
      * Default constructor
      *
-     * @param make
-     * @param model
-     * @param bodyStyle
-     * @param bodyWood
-     * @param finishColor
-     * @param frets
+     * @param make make
+     * @param model model
+     * @param bodyStyle body style
+     * @param bodyWood body wood
+     * @param finishColor finish color
+     * @param frets number of frets
      */
     public Guitar(String make, String model, String bodyStyle, String bodyWood, String finishColor, int frets) {
         this.make = make;
@@ -31,11 +31,6 @@ public abstract class Guitar {
         this.frets = frets;
     }
 
-    /**
-     * Returns make (manufacturer)
-     *
-     * @return make
-     */
     public String getMake() {
         return make;
     }
@@ -44,11 +39,6 @@ public abstract class Guitar {
         this.make = make;
     }
 
-    /**
-     * Returns model
-     *
-     * @return model
-     */
     public String getModel() {
         return model;
     }
@@ -57,11 +47,6 @@ public abstract class Guitar {
         this.model = model;
     }
 
-    /**
-     * Returns body style
-     *
-     * @return body style
-     */
     public String getBodyStyle() {
         return bodyStyle;
     }
@@ -70,11 +55,6 @@ public abstract class Guitar {
         this.bodyStyle = bodyStyle;
     }
 
-    /**
-     * Returns body wood
-     *
-     * @return body wood
-     */
     public String getBodyWood() {
         return bodyWood;
     }
@@ -83,11 +63,6 @@ public abstract class Guitar {
         this.bodyWood = bodyWood;
     }
 
-    /**
-     * Returns color
-     *
-     * @return color
-     */
     public String getFinishColor() {
         return finishColor;
     }
@@ -96,11 +71,6 @@ public abstract class Guitar {
         this.finishColor = finishColor;
     }
 
-    /**
-     * Returns number of frets
-     *
-     * @return frets
-     */
     public int getFrets() {
         return frets;
     }
