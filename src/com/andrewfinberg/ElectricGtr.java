@@ -17,11 +17,20 @@ public class ElectricGtr extends Guitar {
      * @param bodyWood body wood
      * @param finishColor finish color
      * @param frets number of frets
+     * @param cost cost
      * @param pickupType pickup type
      * @param bridgeType bridge type
      */
-    public ElectricGtr(String make, String model, String bodyStyle, String bodyWood, String finishColor, int frets, String pickupType, String bridgeType) {
-        super(make, model, bodyStyle, bodyWood, finishColor, frets);
+    public ElectricGtr(String make,
+                       String model,
+                       String bodyStyle,
+                       String bodyWood,
+                       String finishColor,
+                       int frets,
+                       double cost,
+                       String pickupType,
+                       String bridgeType) {
+        super(make, model, bodyStyle, bodyWood, finishColor, frets, cost);
         this.pickupType = pickupType;
         this.bridgeType = bridgeType;
     }

@@ -11,6 +11,7 @@ public abstract class Guitar {
     protected String bodyWood;
     protected String finishColor;
     protected int frets;
+    protected double cost;
 
     /**
      * Default constructor
@@ -21,8 +22,15 @@ public abstract class Guitar {
      * @param bodyWood body wood
      * @param finishColor finish color
      * @param frets number of frets
+     * @param cost cost
      */
-    public Guitar(String make, String model, String bodyStyle, String bodyWood, String finishColor, int frets) {
+    public Guitar(String make,
+                  String model,
+                  String bodyStyle,
+                  String bodyWood,
+                  String finishColor,
+                  int frets,
+                  double cost) {
         this.make = make;
         this.model = model;
         this.bodyStyle = bodyStyle;
@@ -77,6 +85,14 @@ public abstract class Guitar {
 
     public void setFrets(int frets) {
         this.frets = frets;
+    }
+
+    public double getCost() {
+        return cost;
+    }
+
+    public void setCost(double cost) {
+        this.cost = cost;
     }
 
     @Override
