@@ -15,13 +15,13 @@ public class ElectricGtr extends Guitar {
      * @param model
      * @param bodyStyle
      * @param bodyWood
-     * @param color
+     * @param finishColor
      * @param frets
      * @param pickupType
      * @param bridgeType
      */
-    public ElectricGtr(String make, String model, String bodyStyle, String bodyWood, String color, int frets, String pickupType, String bridgeType) {
-        super(make, model, bodyStyle, bodyWood, color, frets);
+    public ElectricGtr(String make, String model, String bodyStyle, String bodyWood, String finishColor, int frets, String pickupType, String bridgeType) {
+        super(make, model, bodyStyle, bodyWood, finishColor, frets);
         this.pickupType = pickupType;
         this.bridgeType = bridgeType;
     }
@@ -50,6 +50,10 @@ public class ElectricGtr extends Guitar {
 
     public void setBridgeType(String bridgeType) {
         this.bridgeType = bridgeType;
+    }
+
+    public void useTremolo() {
+
     }
 
     @Override

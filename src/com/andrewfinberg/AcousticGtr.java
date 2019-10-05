@@ -16,14 +16,14 @@ public class AcousticGtr extends Guitar {
      * @param model
      * @param bodyStyle
      * @param bodyWood
-     * @param color
+     * @param finishColor
      * @param frets
      * @param soundHole
      * @param cutaway
      * @param bridgeWood
      */
-    public AcousticGtr(String make, String model, String bodyStyle, String bodyWood, String color, int frets, String soundHole, String cutaway, String bridgeWood) {
-        super(make, model, bodyStyle, bodyWood, color, frets);
+    public AcousticGtr(String make, String model, String bodyStyle, String bodyWood, String finishColor, int frets, String soundHole, String cutaway, String bridgeWood) {
+        super(make, model, bodyStyle, bodyWood, finishColor, frets);
         this.soundHole = soundHole;
         this.cutaway = cutaway;
         this.bridgeWood = bridgeWood;
@@ -64,6 +64,10 @@ public class AcousticGtr extends Guitar {
 
     public void setBridgeWood(String bridgeWood) {
         this.bridgeWood = bridgeWood;
+    }
+
+    public void useCapo() {
+
     }
 
     @Override

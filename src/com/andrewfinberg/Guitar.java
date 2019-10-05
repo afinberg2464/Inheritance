@@ -9,7 +9,7 @@ public abstract class Guitar {
     protected String model;
     protected String bodyStyle;
     protected String bodyWood;
-    protected String color;
+    protected String finishColor;
     protected int frets;
 
     /**
@@ -19,15 +19,15 @@ public abstract class Guitar {
      * @param model
      * @param bodyStyle
      * @param bodyWood
-     * @param color
+     * @param finishColor
      * @param frets
      */
-    public Guitar(String make, String model, String bodyStyle, String bodyWood, String color, int frets) {
+    public Guitar(String make, String model, String bodyStyle, String bodyWood, String finishColor, int frets) {
         this.make = make;
         this.model = model;
         this.bodyStyle = bodyStyle;
         this.bodyWood = bodyWood;
-        this.color = color;
+        this.finishColor = finishColor;
         this.frets = frets;
     }
 
@@ -88,12 +88,12 @@ public abstract class Guitar {
      *
      * @return color
      */
-    public String getColor() {
-        return color;
+    public String getFinishColor() {
+        return finishColor;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setFinishColor(String finishColor) {
+        this.finishColor = finishColor;
     }
 
     /**
@@ -116,7 +116,7 @@ public abstract class Guitar {
                 ", model='" + model + '\'' +
                 ", bodyStyle='" + bodyStyle + '\'' +
                 ", bodyWood='" + bodyWood + '\'' +
-                ", color='" + color + '\'' +
+                ", color='" + finishColor + '\'' +
                 ", frets=" + frets +
                 '}';
     }
