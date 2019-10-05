@@ -1,9 +1,6 @@
 package com.andrewfinberg;
 
-import javax.swing.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.function.Consumer;
 
 /**
  * Main method
@@ -42,8 +39,15 @@ public class Driver {
         guitars.add(tylerGuitar);
         guitars.add(martinGuitar);
 
+        //  Enhanced for loop
         for (Guitar instrument : guitars) {
             System.out.println(instrument.whereToBuy());
         }
+
+        //  Lambda expression
+        guitars.forEach((temp) -> {
+            System.out.println(temp);
+            System.out.println(temp.whereToBuy());
+        });
     }
 }
