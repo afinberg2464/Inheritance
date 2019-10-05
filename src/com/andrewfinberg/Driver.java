@@ -1,5 +1,6 @@
 package com.andrewfinberg;
 
+import javax.swing.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.function.Consumer;
@@ -12,7 +13,7 @@ public class Driver {
 
     public static void main(String[] args) {
 
-        ElectricGtr electricGtr = new ElectricGtr(
+        ElectricGtr tylerGuitar = new ElectricGtr(
                 "Tyler",
                 "Burning Water",
                 "Solid",
@@ -22,9 +23,9 @@ public class Driver {
                 3800.0,
                 "HSS",
                 "Modern 2-Point Tremolo");
-        electricGtr.useTremolo();
+        tylerGuitar.useTremolo();
 
-        AcousticGtr acousticGtr = new AcousticGtr(
+        AcousticGtr martinGuitar = new AcousticGtr(
                 "Martin",
                 "D-28",
                 "Dreadnought",
@@ -35,11 +36,14 @@ public class Driver {
                 "Inlaid",
                 "None",
                 "Ebony");
-        acousticGtr.useCapo();
+        martinGuitar.useCapo();
 
         ArrayList<Guitar> guitars = new ArrayList<>();
-        guitars.add(electricGtr);
-        guitars.add(acousticGtr);
+        guitars.add(tylerGuitar);
+        guitars.add(martinGuitar);
 
+        for (Guitar instrument : guitars) {
+            System.out.println(instrument.whereToBuy());
+        }
     }
 }

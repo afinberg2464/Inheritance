@@ -69,6 +69,10 @@ public class AcousticGtr extends Guitar {
 
     }
 
+    public String whereToBuy() {
+        return "Buy me at Wilcutt's Guitars in Lexington, KY";
+    }
+
     @Override
     public String toString() {
         return "AcousticGtr{" +

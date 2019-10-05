@@ -58,6 +58,10 @@ public class ElectricGtr extends Guitar {
 
     }
 
+    public String whereToBuy() {
+        return "Buy me at Sweetwater Sound in Fort Wayne, IN";
+    }
+
     @Override
     public String toString() {
         return "ElectricGtr{" +
