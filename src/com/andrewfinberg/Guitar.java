@@ -4,7 +4,7 @@ package com.andrewfinberg;
  * Super class for Guitars
  * Created by Andrew F 10/3/2019
  */
-public abstract class Guitar {
+public class Guitar {
     protected String make;
     protected String model;
     protected String bodyStyle;

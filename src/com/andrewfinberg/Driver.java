@@ -10,6 +10,15 @@ public class Driver {
 
     public static void main(String[] args) {
 
+        Guitar telecaster = new Guitar(
+                "Fender",
+                "Telecaster",
+                "Solid",
+                "Ash",
+                "Butterscotch",
+                22,
+                2599.0);
+
         ElectricGtr tylerGuitar = new ElectricGtr(
                 "Tyler",
                 "Burning Water",
@@ -20,7 +29,6 @@ public class Driver {
                 3800.0,
                 "HSS",
                 "Modern 2-Point Tremolo");
-        tylerGuitar.useTremolo();
 
         AcousticGtr martinGuitar = new AcousticGtr(
                 "Martin",
@@ -33,9 +41,9 @@ public class Driver {
                 "Inlaid",
                 "None",
                 "Ebony");
-        martinGuitar.useCapo();
 
         ArrayList<Guitar> guitars = new ArrayList<>();
+        guitars.add(telecaster);
         guitars.add(tylerGuitar);
         guitars.add(martinGuitar);
 
