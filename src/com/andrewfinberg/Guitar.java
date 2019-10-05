@@ -12,6 +12,24 @@ public abstract class Guitar {
     protected String color;
     protected int frets;
 
+    /**
+     * Default constructor
+     *
+     * @param make
+     * @param model
+     * @param bodyStyle
+     * @param bodyWood
+     * @param color
+     * @param frets
+     */
+    public Guitar(String make, String model, String bodyStyle, String bodyWood, String color, int frets) {
+        this.make = make;
+        this.model = model;
+        this.bodyStyle = bodyStyle;
+        this.bodyWood = bodyWood;
+        this.color = color;
+        this.frets = frets;
+    }
 
     /**
      * Returns make (manufacturer)
