@@ -4,7 +4,7 @@ package com.andrewfinberg;
  * Super class for Guitars
  * Created by Andrew F 10/3/2019
  */
-public class abstract Guitar {
+public abstract class Guitar {
     protected String make;
     protected String model;
     protected String bodyStyle;
@@ -12,7 +12,7 @@ public class abstract Guitar {
     protected String color;
     protected int frets;
 
-    
+
     /**
      * Returns make (manufacturer)
      *

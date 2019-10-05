@@ -11,18 +11,12 @@ public class AcousticGtr extends Guitar {
 
     /**
      * Default constructor
-     * @param make          Make
-     * @param model         Model
-     * @param bodyStyle     Style
-     * @param bodyWood      Wood
-     * @param color         Color
-     * @param frets         Number of frets
-     * @param soundHole     Sound hole
-     * @param cutaway       Cutaway
-     * @param bridgeWood    Bridge Wood
+     *
+     * @param soundHole
+     * @param cutaway
+     * @param bridgeWood
      */
-    public AcousticGtr(String make, String model, String bodyStyle, String bodyWood, String color, int frets, String soundHole, String cutaway, String bridgeWood) {
-        super(make, model, bodyStyle, bodyWood, color, frets);
+    public AcousticGtr(String soundHole, String cutaway, String bridgeWood) {
         this.soundHole = soundHole;
         this.cutaway = cutaway;
         this.bridgeWood = bridgeWood;

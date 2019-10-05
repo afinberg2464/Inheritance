@@ -7,8 +7,12 @@ public class Sitar extends Guitar {
 
     private String tuning;
 
-    public Sitar(String make, String model, String bodyStyle, String bodyWood, String color, int frets, String tuning) {
-        super(make, model, bodyStyle, bodyWood, color, frets);
+    /**
+     * Default constructor
+     *
+     * @param tuning
+     */
+    public Sitar(String tuning) {
         this.tuning = tuning;
     }
 
