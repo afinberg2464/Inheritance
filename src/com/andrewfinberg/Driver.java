@@ -47,15 +47,21 @@ public class Driver {
         guitars.add(tylerGuitar);
         guitars.add(martinGuitar);
 
-        //  Enhanced for loop
-        for (Guitar instrument : guitars) {
-            System.out.println(instrument.whereToBuy());
-        }
-
         //  Lambda expression
         guitars.forEach((temp) -> {
             System.out.println(temp);
             System.out.println(temp.whereToBuy());
         });
+
+        int countGuitars = 0;
+        int countElectrics = 0;
+        int countAcoustics = 0;
+        for (Guitar instrument : guitars) {
+            if (instrument instanceof ElectricGtr) {
+                countElectrics++;
+            } else if (instrument instanceof AcousticGtr) {
+                countAcoustics++;
+            } else countGuitars++;
+        }
     }
 }
