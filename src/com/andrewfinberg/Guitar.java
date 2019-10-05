@@ -4,7 +4,7 @@ package com.andrewfinberg;
  * Super class for Guitars
  * Created by Andrew F 10/3/2019
  */
-public class Guitar {
+public class abstract Guitar {
     protected String make;
     protected String model;
     protected String bodyStyle;
@@ -12,25 +12,7 @@ public class Guitar {
     protected String color;
     protected int frets;
 
-    /**
-     * Default constructor
-     *
-     * @param make      Make
-     * @param model     Model
-     * @param bodyStyle Style
-     * @param bodyWood  Wood
-     * @param color     Color
-     * @param frets     Number of frets
-     */
-    public Guitar(String make, String model, String bodyStyle, String bodyWood, String color, int frets) {
-        this.make = make;
-        this.model = model;
-        this.bodyStyle = bodyStyle;
-        this.bodyWood = bodyWood;
-        this.color = color;
-        this.frets = frets;
-    }
-
+    
     /**
      * Returns make (manufacturer)
      *
@@ -121,5 +103,3 @@ public class Guitar {
                 '}';
     }
 }
-
-
