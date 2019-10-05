@@ -95,10 +95,6 @@ public abstract class Guitar {
         this.cost = cost;
     }
 
-    public String whereToBuy() {
-        return "I don't know where you can buy me";
-    }
-
     @Override
     public String toString() {
         return "Guitar{" +
