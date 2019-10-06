@@ -10,7 +10,7 @@ public class Driver {
 
     public static void main(String[] args) {
 
-        Instrument violin = new Violins("Violins", 4, "First");
+        Instrument violin = new Violins("Strings", 4, "First");
         Instrument glockenspiel = new Glockenspiel("Percussion", true, "Felt");
 
         ArrayList<Instrument> instruments = new ArrayList<>();
