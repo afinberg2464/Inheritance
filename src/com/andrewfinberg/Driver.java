@@ -10,12 +10,12 @@ public class Driver {
 
     public static void main(String[] args) {
 
-        Instrument violin1 = new Violins("Violins", 4, "First");
-        Instrument glock1 = new Glockenspeil("Percussion", true, "Felt");
+        Instrument violin = new Violins("Violins", 4, "First");
+        Instrument glockenspiel = new Glockenspiel("Percussion", true, "Felt");
 
         ArrayList<Instrument> instruments = new ArrayList<>();
-        instruments.add(violin1);
-        instruments.add(glock1);
+        instruments.add(violin);
+        instruments.add(glockenspiel);
 
         //  Lambda expression
         instruments.forEach((temp) -> {

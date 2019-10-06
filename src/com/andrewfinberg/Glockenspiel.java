@@ -1,9 +1,13 @@
 package com.andrewfinberg;
 
-public class Glockenspeil extends Percussion {
+/**
+ * This is the glockenspiel subclass of percussion
+ * Created by Andrew Finberg 10/6/2019
+ */
+public class Glockenspiel extends Percussion {
     private String beaterType; // wood, felt
 
-    public Glockenspeil(String section, boolean tuned, String beaterType) {
+    public Glockenspiel(String section, boolean tuned, String beaterType) {
         super(section, tuned);
         this.beaterType = beaterType;
     }
@@ -22,7 +26,7 @@ public class Glockenspeil extends Percussion {
 
     @Override
     public String toString() {
-        return "Glockenspeil{" +
+        return "Glockenspiel{" +
                 "beaterType='" + beaterType + '\'' +
                 '}';
     }

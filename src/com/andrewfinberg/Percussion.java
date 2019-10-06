@@ -1,10 +1,18 @@
 package com.andrewfinberg;
 
+/**
+ * This is the percussion subclass of instruments
+ * Created by Andrew Finberg 10/6/2019
+ */
 public class Percussion extends Instrument {
     private boolean tuned;
 
+    /**
+     * Default constructor
+     * @param section   section (strings, percussion, woodwinds, brass)
+     * @param tuned     tuned percussion: true (i.e. xylophone) or false (snare drum)
+     */
     public Percussion(String section, boolean tuned) {
-
         super(section);
         this.tuned = tuned;
     }

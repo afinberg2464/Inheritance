@@ -1,8 +1,17 @@
 package com.andrewfinberg;
 
+/**
+ * This is the superclass for all instruments
+ * Created by Andrew Finberg 10/6/2019
+ */
 public class Instrument {
     private String orchestraSection; //  percussion, brass, woodwind, strings
 
+    /**
+     * Default constructor
+     *
+     * @param section orchestra section
+     */
     public Instrument(String section) {
         this.orchestraSection = section;
     }
