@@ -9,11 +9,12 @@ public class Violins extends Strings {
 
     /**
      * Default constructor
-     * @param section           section (strings, percussion, woodwinds, brass)
-     * @param numStrings        number of strings on the instrument
-     * @param stringSection     first violins, second violins
+     *
+     * @param section       section (strings, percussion, woodwinds, brass)
+     * @param numStrings    number of strings on the instrument
+     * @param stringSection first violins, second violins
      */
-    public Violins(String section, int numStrings, String stringSection) {
+    Violins(String section, int numStrings, String stringSection) {
         super(section, numStrings);
         this.stringSection = stringSection;
     }

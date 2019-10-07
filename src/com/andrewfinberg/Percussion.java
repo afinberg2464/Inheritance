@@ -9,10 +9,11 @@ public class Percussion extends Instrument {
 
     /**
      * Default constructor
-     * @param section   section (strings, percussion, woodwinds, brass)
-     * @param tuned     tuned percussion: true (i.e. xylophone) or false (snare drum)
+     *
+     * @param section section (strings, percussion, woodwinds, brass)
+     * @param tuned   tuned percussion: true (i.e. xylophone) or false (snare drum)
      */
-    public Percussion(String section, boolean tuned) {
+    Percussion(String section, boolean tuned) {
         super(section);
         this.tuned = tuned;
     }

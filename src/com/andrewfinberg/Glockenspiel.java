@@ -7,7 +7,14 @@ package com.andrewfinberg;
 public class Glockenspiel extends Percussion {
     private String beaterType; // wood, felt
 
-    public Glockenspiel(String section, boolean tuned, String beaterType) {
+    /**
+     * Default constructor
+     *
+     * @param section    section
+     * @param tuned      tuned
+     * @param beaterType beater type
+     */
+    Glockenspiel(String section, boolean tuned, String beaterType) {
         super(section, tuned);
         this.beaterType = beaterType;
     }

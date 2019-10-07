@@ -12,7 +12,7 @@ public class Instrument {
      *
      * @param section orchestra section
      */
-    public Instrument(String section) {
+    Instrument(String section) {
         this.orchestraSection = section;
     }
 

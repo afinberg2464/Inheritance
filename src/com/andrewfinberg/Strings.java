@@ -9,10 +9,11 @@ public class Strings extends Instrument {
 
     /**
      * Default constructor
-     * @param section       section (strings, percussion, woodwinds, brass)
-     * @param numStrings    number of strings on the instrument
+     *
+     * @param section    section (strings, percussion, woodwinds, brass)
+     * @param numStrings number of strings on the instrument
      */
-    public Strings(String section, int numStrings) {
+    Strings(String section, int numStrings) {
         super(section);
         this.numStrings = numStrings;
     }
