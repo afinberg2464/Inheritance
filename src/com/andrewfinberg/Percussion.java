@@ -2,7 +2,7 @@ package com.andrewfinberg;
 
 /**
  * This is the percussion subclass of instruments
- * Created by Andrew Finberg 10/6/2019
+ * Created by dev 10/6/2019
  */
 public class Percussion extends Instrument {
     private boolean tuned;

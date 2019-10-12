@@ -2,7 +2,7 @@ package com.andrewfinberg;
 
 /**
  * This is the superclass for all instruments
- * Created by Andrew Finberg 10/6/2019
+ * Created by dev 10/6/2019
  */
 public class Instrument {
     private String orchestraSection; //  percussion, brass, woodwind, strings

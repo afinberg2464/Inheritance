@@ -2,7 +2,7 @@ package com.andrewfinberg;
 
 /**
  * This is the string subclass of instruments
- * Created by Andrew Finberg 10/6/2019
+ * Created by dev 10/6/2019
  */
 public class Strings extends Instrument {
     private int numStrings;

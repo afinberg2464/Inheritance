@@ -3,8 +3,7 @@ package com.andrewfinberg;
 import java.util.ArrayList;
 
 /**
- * Main method
- * Created by Andrew F 10/3/2019
+ * Created by dev 10/3/2019
  */
 public class Driver {
 

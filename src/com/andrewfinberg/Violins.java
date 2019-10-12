@@ -2,7 +2,7 @@ package com.andrewfinberg;
 
 /**
  * This is the violins subclass of strings
- * Created by Andrew Finberg 10/6/2019
+ * Created by dev 10/6/2019
  */
 public class Violins extends Strings {
     private String stringSection; // first violins, second violins

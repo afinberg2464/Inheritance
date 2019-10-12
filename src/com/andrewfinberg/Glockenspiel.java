@@ -2,7 +2,7 @@ package com.andrewfinberg;
 
 /**
  * This is the glockenspiel subclass of percussion
- * Created by Andrew Finberg 10/6/2019
+ * Created by dev 10/6/2019
  */
 public class Glockenspiel extends Percussion {
     private String beaterType; // wood, felt
