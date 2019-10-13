@@ -9,27 +9,19 @@ public class Driver {
 
     public static void main(String[] args) {
 
-        Instrument violin = new Violins("Strings", 4, "First");
-        Instrument glockenspiel = new Glockenspiel("Percussion", true, "Felt");
+        Violins violin = new Violins("Strings", 4, "First");
+        String section = violin.getOrchestraSection();
+        String stringSection = violin.getStringSection();
+        violin.playBowLegato();
+        violin.playBowStaccato();
+        violin.playBowTremolo();
+        violin.pluckStrings();
 
-        ArrayList<Instrument> instruments = new ArrayList<>();
-        instruments.add(violin);
-        instruments.add(glockenspiel);
+        Glockenspiel glockenspiel = new Glockenspiel("Percussion", true, "Felt");
+        String beaterType = glockenspiel.getBeaterType();
+        glockenspiel.playBrushes();
+        glockenspiel.playMallets();
+        glockenspiel.playSticks();
 
-        //  Lambda expression
-        instruments.forEach((temp) -> {
-            System.out.println(temp);
-            System.out.println(temp.play());
-        });
-
-        int countStrings = 0;
-        int countPercussion = 0;
-        for (Instrument instrument : instruments) {
-            if (instrument instanceof Percussion) {
-                countPercussion++;
-            } else if (instrument instanceof Strings) {
-                countStrings++;
-            }
-        }
     }
 }

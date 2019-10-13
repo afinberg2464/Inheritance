@@ -5,6 +5,7 @@ package com.andrewfinberg;
  * Created by dev 10/6/2019
  */
 public class Violins extends Strings implements IStrings {
+
     private String stringSection; // first violins, second violins
 
     /**
@@ -19,12 +20,52 @@ public class Violins extends Strings implements IStrings {
         this.stringSection = stringSection;
     }
 
+    /**
+     *  Accessor for string section
+     * @return string section
+     */
     public String getStringSection() {
         return stringSection;
     }
 
+    /**
+     * Mutator for string section
+     * @param stringSection string section
+     */
     public void setStringSection(String stringSection) {
         this.stringSection = stringSection;
+    }
+
+    /**
+     * Override method to pluck strings
+     */
+    @Override
+    public void pluckStrings() {
+
+    }
+
+    /**
+     * Override method to play staccato
+     */
+    @Override
+    public void playBowStaccato() {
+
+    }
+
+    /**
+     * Override method to play legato
+     */
+    @Override
+    public void playBowLegato() {
+
+    }
+
+    /**
+     * Override method to play tremolo
+     */
+    @Override
+    public void playBowTremolo() {
+
     }
 
     @Override
@@ -34,28 +75,4 @@ public class Violins extends Strings implements IStrings {
                 '}';
     }
 
-    @Override
-    public void pluckStrings() {
-
-    }
-
-    @Override
-    public void playBowStaccato() {
-
-    }
-
-    @Override
-    public void playBowLegato() {
-
-    }
-
-    @Override
-    public void playBowTremolo() {
-
-    }
-
-    @Override
-    public String play() {
-        return "Violin solo!";
-    }
 }

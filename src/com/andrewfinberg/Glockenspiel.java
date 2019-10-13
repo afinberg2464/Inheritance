@@ -5,6 +5,7 @@ package com.andrewfinberg;
  * Created by dev 10/6/2019
  */
 public class Glockenspiel extends Percussion implements IPercussion {
+
     private String beaterType; // wood, felt
 
     /**
@@ -19,12 +20,44 @@ public class Glockenspiel extends Percussion implements IPercussion {
         this.beaterType = beaterType;
     }
 
+    /**
+     * Accessor to get beater type
+     * @return beater type
+     */
     public String getBeaterType() {
         return beaterType;
     }
 
+    /**
+     * Mutator to set beater type
+     * @param beaterType beater type
+     */
     public void setBeaterType(String beaterType) {
         this.beaterType = beaterType;
+    }
+
+    /**
+     * Override method to play brushes
+     */
+    @Override
+    public void playBrushes() {
+
+    }
+
+    /**
+     * Override method to play mallets
+     */
+    @Override
+    public void playMallets() {
+
+    }
+
+    /**
+     * Override method to play sticks
+     */
+    @Override
+    public void playSticks() {
+
     }
 
     @Override
@@ -32,30 +65,5 @@ public class Glockenspiel extends Percussion implements IPercussion {
         return "Glockenspiel{" +
                 "beaterType='" + beaterType + '\'' +
                 '}';
-    }
-
-    @Override
-    public void playBrushes() {
-
-    }
-
-    @Override
-    public void playMallets() {
-
-    }
-
-    @Override
-    public void playSticks() {
-
-    }
-
-    @Override
-    public void playHands() {
-
-    }
-
-    @Override
-    public String play() {
-        return "Ding dong!";
     }
 }

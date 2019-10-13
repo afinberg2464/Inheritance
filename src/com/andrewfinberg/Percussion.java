@@ -19,10 +19,18 @@ public abstract class Percussion extends Instrument {
         this.tuned = tuned;
     }
 
+    /**
+     * Returns whether the percussion is tuned
+     * @return
+     */
     public boolean isTuned() {
         return tuned;
     }
 
+    /**
+     * Mutator to set whether the percussion is tuned
+     * @param tuned
+     */
     public void setTuned(boolean tuned) {
         this.tuned = tuned;
     }

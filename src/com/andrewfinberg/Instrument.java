@@ -17,10 +17,20 @@ public abstract class Instrument {
         this.orchestraSection = section;
     }
 
+    /**
+     * Accessor for orchestra section
+     *
+     * @return orchestra section
+     */
     public String getOrchestraSection() {
         return orchestraSection;
     }
 
+    /**
+     * Mutator for orchestra section
+     *
+     * @param orchestraSection orchestra section
+     */
     public void setOrchestraSection(String orchestraSection) {
         this.orchestraSection = orchestraSection;
     }
@@ -30,9 +40,5 @@ public abstract class Instrument {
         return "Instrument{" +
                 "section='" + orchestraSection + '\'' +
                 '}';
-    }
-
-    public String play() {
-        return "Generic sound";
     }
 }
