@@ -4,7 +4,8 @@ package com.andrewfinberg;
  * This is the string subclass of instruments
  * Created by dev 10/6/2019
  */
-public class Strings extends Instrument {
+public abstract class Strings extends Instrument {
+
     private int numStrings;
 
     /**
@@ -18,16 +19,20 @@ public class Strings extends Instrument {
         this.numStrings = numStrings;
     }
 
+    /**
+     * Accessor for number of strings
+     * @return number of strings
+     */
     public int getNumStrings() {
         return numStrings;
     }
 
+    /**
+     * Mutator for number of strings
+     * @param numStrings number of strings
+     */
     public void setNumStrings(int numStrings) {
         this.numStrings = numStrings;
-    }
-
-    public String play() {
-        return "Lush strings pad sound here";
     }
 
     @Override

@@ -4,7 +4,8 @@ package com.andrewfinberg;
  * This is the glockenspiel subclass of percussion
  * Created by dev 10/6/2019
  */
-public class Glockenspiel extends Percussion {
+public class Glockenspiel extends Percussion implements IPercussion {
+
     private String beaterType; // wood, felt
 
     /**
@@ -19,16 +20,44 @@ public class Glockenspiel extends Percussion {
         this.beaterType = beaterType;
     }
 
+    /**
+     * Accessor to get beater type
+     * @return beater type
+     */
     public String getBeaterType() {
         return beaterType;
     }
 
+    /**
+     * Mutator to set beater type
+     * @param beaterType beater type
+     */
     public void setBeaterType(String beaterType) {
         this.beaterType = beaterType;
     }
 
-    public String play() {
-        return "Ding dong";
+    /**
+     * Override method to play brushes
+     */
+    @Override
+    public void playBrushes() {
+
+    }
+
+    /**
+     * Override method to play mallets
+     */
+    @Override
+    public void playMallets() {
+
+    }
+
+    /**
+     * Override method to play sticks
+     */
+    @Override
+    public void playSticks() {
+
     }
 
     @Override

@@ -4,8 +4,9 @@ package com.andrewfinberg;
  * This is the superclass for all instruments
  * Created by dev 10/6/2019
  */
-public class Instrument {
-    private String orchestraSection; //  percussion, brass, woodwind, strings
+public abstract class Instrument {
+
+    private String orchestraSection;
 
     /**
      * Default constructor
@@ -16,16 +17,22 @@ public class Instrument {
         this.orchestraSection = section;
     }
 
+    /**
+     * Accessor for orchestra section
+     *
+     * @return orchestra section
+     */
     public String getOrchestraSection() {
         return orchestraSection;
     }
 
+    /**
+     * Mutator for orchestra section
+     *
+     * @param orchestraSection orchestra section
+     */
     public void setOrchestraSection(String orchestraSection) {
         this.orchestraSection = orchestraSection;
-    }
-
-    public String play() {
-        return "I don't know what sound to make";
     }
 
     @Override
