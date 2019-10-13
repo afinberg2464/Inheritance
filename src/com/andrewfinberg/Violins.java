@@ -4,7 +4,7 @@ package com.andrewfinberg;
  * This is the violins subclass of strings
  * Created by dev 10/6/2019
  */
-public class Violins extends Strings {
+public class Violins extends Strings implements IStrings {
     private String stringSection; // first violins, second violins
 
     /**
@@ -27,14 +27,35 @@ public class Violins extends Strings {
         this.stringSection = stringSection;
     }
 
-    public String play() {
-        return "Violin solo!";
-    }
-
     @Override
     public String toString() {
         return "Violins{" +
                 "stringSection='" + stringSection + '\'' +
                 '}';
+    }
+
+    @Override
+    public void pluckStrings() {
+
+    }
+
+    @Override
+    public void playBowStaccato() {
+
+    }
+
+    @Override
+    public void playBowLegato() {
+
+    }
+
+    @Override
+    public void playBowTremolo() {
+
+    }
+
+    @Override
+    public String play() {
+        return "Violin solo!";
     }
 }

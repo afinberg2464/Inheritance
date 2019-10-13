@@ -4,7 +4,8 @@ package com.andrewfinberg;
  * This is the percussion subclass of instruments
  * Created by dev 10/6/2019
  */
-public class Percussion extends Instrument {
+public abstract class Percussion extends Instrument {
+
     private boolean tuned;
 
     /**
@@ -24,10 +25,6 @@ public class Percussion extends Instrument {
 
     public void setTuned(boolean tuned) {
         this.tuned = tuned;
-    }
-
-    public String play() {
-        return "Percussion section jam";
     }
 
     @Override
